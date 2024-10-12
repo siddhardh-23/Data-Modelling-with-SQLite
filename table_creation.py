@@ -3,7 +3,6 @@ from commands import create_table_queries, drop_table_queries
 
 
 def create_database():
-    # Connect to SQLite (this creates a database file 'sparkifydb.db' if it doesn't exist)
     conn = sqlite3.connect('outputdb.db')
     cur = conn.cursor()
     
